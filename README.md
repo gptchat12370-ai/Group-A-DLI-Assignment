@@ -28,11 +28,11 @@ The group evaluated multiple deep learning approaches, with **Shehab’s NN (Bet
 ---
 
 ## Models Implemented
-- **Shehab (Prototype)**: BetterNN (per-node MLP with residuals and GELU).
-- **Hamza**: 1D CNN.
-- **Omar**: Inception-ResNet-1D.
-- **Rasheed**: Keras MLP.
-- **Seklani**: GaussianNB.
+- **Shehab (Prototype)**: GNN.
+- **Hamza**: CNN.
+- **Omar**: InceptionResnetV2.
+- **Rasheed**: MLP.
+- **Seklani**: NB.
 
 Each model was trained and evaluated with consistent splits and metrics.
 
