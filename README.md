@@ -57,8 +57,11 @@ Each model was trained and evaluated with consistent splits and metrics.
 ### Validation Calibrated Threshold → Test Metrics
 
 | Model         | Accuracy | Precision | Recall | F1   | AUC   |
+
 |---------------|----:|---------:|----------:|-------:|-----:|------:|
+
 | **Shehab BetterNN** | **97.54%** | 86.97% | 88.71% | 87.84% | **99.02%** |
+
 | Paper NN     | 88.35% | 71.35% | 85.82% | 75.62% | 93.76% |
 
 **Confusion (BetterNN):** TP=621, FP=93, TN=6207, FN=79.
