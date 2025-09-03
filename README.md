@@ -56,10 +56,10 @@ Each model was trained and evaluated with consistent splits and metrics.
 
 ### Validation Calibrated Threshold → Test Metrics
 
-| Model         | Thr | Accuracy | Precision | Recall | F1   | AUC   |
+| Model         | Accuracy | Precision | Recall | F1   | AUC   |
 |---------------|----:|---------:|----------:|-------:|-----:|------:|
-| **Shehab BetterNN** | 0.83 | **97.54%** | 86.97% | 88.71% | 87.84% | **0.990** |
-| Shehab NN     | 0.91 | 97.19% | 84.79% | 87.57% | 86.16% | 0.988 |
+| **Shehab BetterNN** | **97.54%** | 86.97% | 88.71% | 87.84% | **99.02%** |
+| Paper NN     | 88.35% | 71.35% | 85.82% | 75.62% | 93.76% |
 
 **Confusion (BetterNN):** TP=621, FP=93, TN=6207, FN=79.
 
@@ -74,19 +74,7 @@ We implemented a **Gradio interface** allowing interactive testing.
 - Upload CSV row → get probability + prediction.  
 - Uses saved weights (`shehab_nn.pt`, etc.).
 - GUI supports `share=True` for public demo.
-
----
-
-## Repository Layout
-```
-Group-A-DLI-Assignment/
-├─ notebooks/                 # Model training notebooks
-├─ gui/                       # Gradio app
-├─ datasets/                  # Synthetic dataset
-├─ weights/                   # Saved weights
-├─ assets/                    # Screenshots, plots, commit logs
-└─ README.md                  # This file
-```
+- Link: https://bdaa9f88338df6d755.gradio.live/
 
 ---
 
@@ -99,21 +87,23 @@ Group-A-DLI-Assignment/
 
 ## Collaboration & Git Evidence
 - All members made meaningful Git commits:
-  - **Shehab**: Model Lead (NN, BetterNN).
+  - **Shehab**: GNN Lead.
   - **Hamza**: CNN Lead.
   - **Omar**: Incep1D Lead.
-  - **Rasheed**: Keras MLP Lead.
-  - **Seklani**: GaussianNB Lead.  
-- Evidence: commit log screenshots included in `/assets/commit_log.png`.
+  - **Rasheed**: MLP Lead.
+  - **Seklani**: NB Lead.
 
 ---
 
 ## References
-- Original Dataset & Paper Repo: [Attack Graph Dataset-1].
+- Original Dataset & Paper Repo: [Attack Graph Dataset-1] link: https://github.com/zhenlus/GNN-IDS/blob/main/mulval_attack_graph/AttackGraph.dot .
 - PyTorch & PyG documentation.  
 - scikit-learn documentation.  
 - TensorFlow/Keras documentation.
-
+- Libraries: https://github.com/zhenlus/GNN-IDS/tree/main/src
+- Paper: https://dl.acm.org/doi/10.1145/3664476.3664515
+- Paper Code: https://github.com/zhenlus/GNN-IDS/blob/main/src/gnn_ids_dataset1.ipynb
+- Dataset: https://github.com/zhenlus/GNN-IDS/tree/main/datasets/synt
 ---
 
 ## License
